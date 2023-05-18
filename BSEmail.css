@@ -1,0 +1,217 @@
+
+body {
+  background-color: #e5e5f7;
+opacity: 0.8;
+background-image: radial-gradient(#477af0 0.5px, #f9f9fc 0.5px);
+background-size: 10px 10px;
+}
+
+
+.btn-primary {
+    background-color: #006d77;
+    border-color: #006d77;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  /* Customize the off-canvas sidebar */
+  .offcanvas {
+    background-color:#006d77;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+  }
+  
+  /* Customize the off-canvas sidebar header */
+  .offcanvas-header {
+    background-color:#006d77;
+    color: #fff;
+  }
+  
+  /* Customize the off-canvas sidebar title */
+  .offcanvas-title {
+    margin: 0;
+  }
+  
+  /* Customize the off-canvas sidebar close button */
+  .offcanvas .btn-close {
+    color: #fff;
+  }
+  
+  /* Customize the off-canvas sidebar body */
+  .offcanvas-body {
+    padding: 20px;
+    font-size: 18px;
+  }
+  
+  .offcanvas-body a {
+    color: white;
+  }
+
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .search-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    margin-bottom: 20px;
+    
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888888;
+    width: 80%;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+
+
+  .btn-outline-success {
+    background-color: #9fa3a3;
+    border-color: #f7f9f9;
+  
+  }
+  .btn-outline-success:hover{
+    background-color:#006d77;
+    border-color: #eff2f2;
+   
+  }
+  
+  .pagination .page-link {
+    color: rgb(241, 90, 9); /* Change the color to your desired value */
+  }
+
+  .pagination {
+    margin-bottom: 40px; /* Add margin to the bottom of the page navigation */
+  }
+  .inbox-container {
+    display: flex;
+    flex-direction: row;
+
+  }
+
+
+
+  header {
+    text-align:center;
+    margin-bottom: 10%;
+    margin-top: 0;
+
+  }
+  
+  .mailbox {
+    background-color: #fff;
+    padding: 10px;
+    box-shadow:0 0 10px rgba(242, 133, 9, 0.2);
+   margin-left:100px;
+   margin-top:-30px;
+   
+   
+  }
+  
+  .mailbox-header,
+  .mailbox-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 10px;
+    align-items: center;
+    border-bottom: 1px solid #ee9761;
+    box-shadow: 0 0 10px rgba(242, 133, 9, 0.2);
+  }
+  
+  .mailbox-header .col-1,
+  .mailbox-item .col-1 {
+    text-align: center;
+  }
+  
+  .mailbox-header .col-5,
+  .mailbox-item .col-5 {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .mailbox-header .col-5 .sender-name,
+  .mailbox-item .col-5 .sender-name {
+    font-weight: bold;
+    color:#ee9761;
+  }
+  
+  .mailbox-header .col-5 .email-title,
+  .mailbox-item .col-5 .email-title {
+    color: #ee97615;
+  }
+  
+  .mailbox-header .col-4,
+  .mailbox-item .col-4 {
+    text-align: right;
+    color:#ee9761;
+  }
+  
+  .mail-compose {
+   
+    padding: 0px;
+    margin-top: 0px;
+    color:#ec7d28;
+    
+  }
+  
+  .mail-compose textarea {
+    width: 400px;
+    height: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    resize: none;
+    margin-top: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .mail-compose .form-group {
+    margin-top: 10px;
+    width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color:#ec7d28;
+  }
+  
+  .mail-compose .flexbox {
+    display: flex;
+    justify-content: flex-end;
+
+   
+  }
+  
+  .mail-compose .btn {
+    margin-left: 10px;
+  }
+  

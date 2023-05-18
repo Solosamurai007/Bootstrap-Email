@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link href="BSEmail.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-----Humburger icon------>
+
+  <div class="d-flex">
+    <a href="#" class="btn btn-primary me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+        <path d="M0 2.5A1.5 1.5 0 0 1 1.5 1h13a1.5 1.5 0 0 1 0 3h-13A1.5 1.5 0 0 1 0 2.5zm0 5A1.5 1.5 0 0 1 1.5 6h13a1.5 1.5 0 0 1 0 3h-13A1.5 1.5 0 0 1 0 7.5zm0 5A1.5 1.5 0 0 1 1.5 11h13a1.5 1.5 0 0 1 0 3h-13A1.5 1.5 0 0 1 0 12.5z"/>
+      </svg>
+    </a>
+
+    <!----Search bar -->
+    <form class="d-flex">
+      <input class="form-control me-2-" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+  </div>
+
+   
+ <!---- offcanvas Navbar ------> 
+
+
+<div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="staticBackdropLabel">MailBox</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+  </div>
+   <div class="offcanvas-body">
+    <ul class="list-unstyled">
+      <li class="text-white"><a href="#">Inbox</a></li>
+      <li class="text-white"><a href="#">Important</a></li>
+      <li class="text-white"><a href="#">Sent</a></li>
+      <li class="text-white"><a href="#">Draft</a></li>
+      <li class="text-white"><a href="#">Spam</a></li>
+      <li class="text-white"><a href="#">Trash</a></li>
+    </ul>
+  </div>
+</div>
+
+
+
+
+  <!------- Inbox ------->
+
+  <!-- Title Section -->
+  <div class="row">
+    <div class="col-md-12">
+      <div class="inbox-container">
+        <h2 class="inbox-heading">Inbox</h2>
+      </div>
+    </div>
+  </div>
+  
+
+
+        <!-- Page Navigation -->
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+              <a class="page-link">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#">Next</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+    <div class="row">
+      <div class="col-md-8">
+        <div class="mailbox">
+          <div class="mailbox-header">
+            <div class="col-1">
+              <input type="checkbox">
+            </div>
+            <div class="col-5">
+              <div class="sender-name">Sender Name</div>
+              <div class="email-title">Email Title</div>
+            </div>
+            <div class="col-4">
+              Date
+            </div>
+          </div>
+          <div class="mailbox-item">
+            <div class="col-1">
+              <input type="checkbox">
+            </div>
+            <div class="col-5">
+              <div class="sender-name">Sender Name</div>
+              <div class="email-title">Email Title</div>
+            </div>
+            <div class="col-4">
+              Date
+            </div>
+          </div>
+          <div class="mailbox-item">
+            <div class="col-1">
+              <input type="checkbox">
+            </div>
+            <div class="col-5">
+              <div class="sender-name">Sender Name</div>
+              <div class="email-title">Email Title</div>
+            </div>
+            <div class="col-4">
+              Date
+            </div>
+          </div>
+          <div class="mailbox-item">
+            <div class="col-1">
+              <input type="checkbox">
+            </div>
+            <div class="col-5">
+              <div class="sender-name">Sender Name</div>
+              <div class="email-title">Email Title</div>
+            </div>
+            <div class="col-4">
+              Date
+            </div>
+          </div>
+
+          <div class="mailbox-item">
+            <div class="col-1">
+              <input type="checkbox">
+            </div>
+            <div class="col-5">
+              <div class="sender-name">Sender Name</div>
+              <div class="email-title">Email Title</div>
+            </div>
+            <div class="col-4">
+              Date
+            </div>
+          </div>
+
+          <div class="mailbox-item">
+            <div class="col-1">
+              <input type="checkbox">
+            </div>
+            <div class="col-5">
+              <div class="sender-name">Sender Name</div>
+              <div class="email-title">Email Title</div>
+            </div>
+            <div class="col-4">
+              Date
+            </div>
+          </div>
+          <div class="mailbox-item">
+            <div class="col-1">
+              <input type="checkbox">
+            </div>
+            <div class="col-5">
+              <div class="sender-name">Sender Name</div>
+              <div class="email-title">Email Title</div>
+            </div>
+            <div class="col-4">
+              Date
+            </div>
+          </div>
+          <div class="mailbox-item">
+            <div class="col-1">
+              <input type="checkbox">
+            </div>
+            <div class="col-5">
+              <div class="sender-name">Sender Name</div>
+              <div class="email-title">Email Title</div>
+            </div>
+            <div class="col-4">
+              Date
+            </div>
+          </div>
+          <div class="mailbox-item">
+            <div class="col-1">
+              <input type="checkbox">
+            </div>
+            <div class="col-5">
+              <div class="sender-name">Sender Name</div>
+              <div class="email-title">Email Title</div>
+            </div>
+            <div class="col-4">
+              Date
+            </div>
+          </div>
+          <div class="mailbox-item">
+            <div class="col-1">
+              <input type="checkbox">
+            </div>
+            <div class="col-5">
+              <div class="sender-name">Sender Name</div>
+              <div class="email-title">Email Title</div>
+            </div>
+            <div class="col-4">
+              Date
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+         <!---email form ---->
+      <div class="col-md-4">
+        <div class="mail-compose">
+          <div class="form-group">
+            <label for="to">To:</label>
+            <input type="text" class="form-control" id="to" placeholder="Enter recipient">
+          </div>
+          <div class="form-group">
+            <label for="from">From:</label>
+            <input type="text" class="form-control" id="from" placeholder="Enter sender">
+          </div>
+          <textarea rows="10" placeholder="Compose your reply..."></textarea>
+          <div class="flexbox">
+            <button class="btn btn-primary">Reply</button>
+            <button class="btn btn-primary">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+   
