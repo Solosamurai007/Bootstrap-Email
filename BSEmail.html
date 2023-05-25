@@ -6,234 +6,403 @@
   <title>Bootstrap demo</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   <link href="BSEmail.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
 </head>
 <body>
 
-  <!-----Humburger icon------>
-
+ 
+  <!-----Hamburger icon------>
+  
   <div class="d-flex">
+    <div class= "hamburger-icon">
     <a href="#" class="btn btn-primary me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
         <path d="M0 2.5A1.5 1.5 0 0 1 1.5 1h13a1.5 1.5 0 0 1 0 3h-13A1.5 1.5 0 0 1 0 2.5zm0 5A1.5 1.5 0 0 1 1.5 6h13a1.5 1.5 0 0 1 0 3h-13A1.5 1.5 0 0 1 0 7.5zm0 5A1.5 1.5 0 0 1 1.5 11h13a1.5 1.5 0 0 1 0 3h-13A1.5 1.5 0 0 1 0 12.5z"/>
       </svg>
     </a>
+    </div>
 
-    <!----Search bar -->
-    <form class="d-flex">
-      <input class="form-control me-2-" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success" type="submit">Search</button>
-    </form>
+
+<!---Navi bar --->
+
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Move To</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <button type="button" class="btn btn-light"><i class="bi bi-trash"></i></button>
+        </li>
+        <li class="nav-item">
+          <button type="button" class="btn btn-light"><i class="bi bi-exclamation-triangle"></i></button>
+        </li>
+        <li class="nav-item">
+          <button type="button" class="btn btn-light"><i class="bi bi-star"></i></button>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
   </div>
+</nav>
 
+
+
+ <!-- Modal Button Container -->
+<div class="modal-button-container">
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Compose</button>
+</div>
+</div>
+<!----Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Recipient:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send message</button>
+        <button type="button" class="btn btn-success">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
    
  <!---- offcanvas Navbar ------> 
 
-
 <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
   <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="staticBackdropLabel">MailBox</h5>
+    <h5 class="offcanvas-title" id="staticBackdropLabel">
+      <i class="bi bi-envelope-fill"></i> MailBox
+    </h5>
+    
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
   </div>
    <div class="offcanvas-body">
     <ul class="list-unstyled">
-      <li class="text-white"><a href="#">Inbox</a></li>
-      <li class="text-white"><a href="#">Important</a></li>
-      <li class="text-white"><a href="#">Sent</a></li>
-      <li class="text-white"><a href="#">Draft</a></li>
-      <li class="text-white"><a href="#">Spam</a></li>
-      <li class="text-white"><a href="#">Trash</a></li>
-    </ul>
+      <li class="text-white mb-2"><i class="bi bi-inbox-fill "></i> <a href="#">Inbox</a></li>
+      <li class="text-white mb-2"><i class="bi bi-star-fill"></i> <a href="#">Important</a></li>
+      <li class="text-white mb-2"><i class="bi bi-send-check"></i> <a href="#">Sent</a></li>
+      <li class="text-white mb-2"><i class="bi-pencil-fill"></i> <a href="#">Draft</a></li>
+      <li class="text-white mb-2"><i class="bi bi-exclamation-circle-fill"></i> <a href="#">Spam</a></li>
+      <li class="text-white mb-2"><i class="bi bi-trash-fill"></i> <a href="#">Trash</a></li>
+      <li class="text-white mb-2"><i class="bi bi-folder"></i> <a href="#">Folder</a></li>
+    </ul> 
   </div>
 </div>
-
-
-
-
-  <!------- Inbox ------->
-
-  <!-- Title Section -->
-  <div class="row">
-    <div class="col-md-12">
-      <div class="inbox-container">
-        <h2 class="inbox-heading">Inbox</h2>
-      </div>
-    </div>
-  </div>
-  
-
+         
 
         <!-- Page Navigation -->
-        <nav aria-label="Page navigation example">
-          <ul class="pagination justify-content-center">
-            <li class="page-item disabled">
-              <a class="page-link">Previous</a>
+        <div class="row">
+          <div class="col-md-12">
+            <nav aria-label="Page navigation example">
+              <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                  <a class="page-link">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Next</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+  
+ 
+   <!-----Column 1 Alert section------> 
+   
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-1">
+        <ul class="list-unstyled">
+          <li>
+            <h7><strong>DotMail BOX</strong></h7> 
+            <div class="alert alert-info alert-tablet" role="alert">
+              <i class="bi bi-envelope-heart-fill fa-2x animated-icon"></i>
+            </div>
+          </li>
+          <li>
+            <div class="alert alert-info alert-tablet" role="alert">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-emoji-sunglasses fa-2x animated-icon" viewBox="0 0 16 16">
+                <path d="M4.968 9.75a.5.5 0 1 0-.866.5A4.498 4.498 0 0 0 8 12.5a4.5 4.5 0 0 0 3.898-2.25.5.5 0 1 0-.866-.5A3.498 3.498 0 0 1 8 11.5a3.498 3.498 0 0 1-3.032-1.75zM7 5.116V5a1 1 0 0 0-1-1H3.28a1 1 0 0 0-.97 1.243l.311 1.242A2 2 0 0 0 4.561 8H5a2 2 0 0 0 1.994-1.839A2.99 2.99 0 0 1 8 6c.393 0 .74.064 1.006.161A2 2 0 0 0 11 8h.438a2 2 0 0 0 1.94-1.515l.311-1.242A1 1 0 0 0 12.72 4H10a1 1 0 0 0-1 1v.116A4.22 4.22 0 0 0 8 5c-.35 0-.69.04-1 .116z"/>
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-1 0A7 7 0 1 0 1 8a7 7 0 0 0 14 0z"/>
+              </svg>
+            </div></li>
+        </ul>
+      </div>
+
+      <!-----Column 2 Mailbox------> 
+      <div class="col-sm-6">
+        <ul class="list-group">
+          <li class="list-group-item highlight">
+        
+            <div class="d-flex align-items-center ">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="email1">
+                <label class="form-check-label" for="email1"></label>
+              </div>
+              <div>
+                <div class="ms-3">
+                  John Doe &lt;john@example.com&gt;
+                  <br>
+                  <span class="font-weight-bold">Subject:</span> Meeting Request
+                  <br>
+                  <span class="font-italic">May 13, 2023 9:30 AM</span>
+                </div>
+              </div>
             </li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item">
-              <a class="page-link" href="#">Next</a>
+            <li class="list-group-item">
+              <div class="d-flex align-items-center ">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="email1">
+                  <label class="form-check-label" for="email1"></label>
+                </div>
+                <div>
+                  <div class="ms-3">
+                    Jane Doe &lt;jane@example.com&gt;
+                    <br>
+                    <span class="font-weight-bold">Subject:</span> Project Update
+                    <br>
+                    <span class="font-italic">May 12, 2023 3:15 PM</span>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="d-flex align-items-center ">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="email1">
+                    <label class="form-check-label" for="email1"></label>
+                  </div>
+                  <div>
+                    <div class="ms-3">
+                      Bob Smith &lt;bob@example.com&gt;
+                          <br>
+                          <span class="font-weight-bold">Subject:</span> Follow up on job interview
+                          <br>
+                          <span class="font-italic">May 11, 2023 11:45 AM</span>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="d-flex align-items-center ">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="email1">
+                      <label class="form-check-label" for="email1"></label>
+                    </div>
+                    <div>
+                      <div class="ms-3">
+                        <span class="fw-bold">Sender Name</span> - Email Title
+                        <span class="text-muted"> - Date</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item">
+                    <div class="d-flex align-items-center ">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="email1">
+                        <label class="form-check-label" for="email1"></label>
+                      </div>
+                      <div>
+                        <div class="ms-3">
+                          <span class="fw-bold">Sender Name</span> - Email Title
+                          <span class="text-muted"> - Date</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="d-flex align-items-center ">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="email1">
+                          <label class="form-check-label" for="email1"></label>
+                        </div>
+                        <div>
+                          <div class="ms-3">
+                            <span class="fw-bold">Sender Name</span> - Email Title
+                            <span class="text-muted"> - Date</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item">
+                        <div class="d-flex align-items-center ">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="email1">
+                            <label class="form-check-label" for="email1"></label>
+                          </div>
+                          <div>
+                            <div class="ms-3">
+                              <span class="fw-bold">Sender Name</span> - Email Title
+                              <span class="text-muted"> - Date</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          <div class="d-flex align-items-center ">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="email1">
+                              <label class="form-check-label" for="email1"></label>
+                            </div>
+                            <div>
+                              <div class="ms-3">
+                                <span class="fw-bold">Sender Name</span> - Email Title
+                                <span class="text-muted"> - Date</span>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-group-item">
+                            <div class="d-flex align-items-center ">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="email1">
+                                <label class="form-check-label" for="email1"></label>
+                              </div>
+                              <div>
+                                <div class="ms-3">
+                                  <span class="fw-bold">Sender Name</span> - Email Title
+                                  <span class="text-muted"> - Date</span>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="list-group-item">
+                              <div class="d-flex align-items-center ">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="email1">
+                                  <label class="form-check-label" for="email1"></label>
+                                </div>
+                                <div>
+                                  <div class="ms-3">
+                                    <span class="fw-bold">Sender Name</span> - Email Title
+                                    <span class="text-muted"> - Date</span>
+                                  </div>
+                                </div>
+                              </li>
+            
+            <li class="list-group-item">
+              <div class="d-flex align-items-center">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="email2">
+                  <label class="form-check-label" for="email2"></label>
+                </div>
+                <div class="ms-2">
+                  <span class="fw-bold">Sender Name</span> - Email Title
+                  <span class="text-muted"> - Date</span>
+                </div>
+              </div>
             </li>
           </ul>
-        </nav>
-      </div>
-    </div>
-  </div>
+        </div>
+ <!-- Add more email list items here -->
+ <!-- Repeat the code block below for each email item -->
 
-    <div class="row">
-      <div class="col-md-8">
-        <div class="mailbox">
-          <div class="mailbox-header">
-            <div class="col-1">
-              <input type="checkbox">
-            </div>
-            <div class="col-5">
-              <div class="sender-name">Sender Name</div>
-              <div class="email-title">Email Title</div>
-            </div>
-            <div class="col-4">
-              Date
-            </div>
-          </div>
-          <div class="mailbox-item">
-            <div class="col-1">
-              <input type="checkbox">
-            </div>
-            <div class="col-5">
-              <div class="sender-name">Sender Name</div>
-              <div class="email-title">Email Title</div>
-            </div>
-            <div class="col-4">
-              Date
-            </div>
-          </div>
-          <div class="mailbox-item">
-            <div class="col-1">
-              <input type="checkbox">
-            </div>
-            <div class="col-5">
-              <div class="sender-name">Sender Name</div>
-              <div class="email-title">Email Title</div>
-            </div>
-            <div class="col-4">
-              Date
-            </div>
-          </div>
-          <div class="mailbox-item">
-            <div class="col-1">
-              <input type="checkbox">
-            </div>
-            <div class="col-5">
-              <div class="sender-name">Sender Name</div>
-              <div class="email-title">Email Title</div>
-            </div>
-            <div class="col-4">
-              Date
-            </div>
-          </div>
-
-          <div class="mailbox-item">
-            <div class="col-1">
-              <input type="checkbox">
-            </div>
-            <div class="col-5">
-              <div class="sender-name">Sender Name</div>
-              <div class="email-title">Email Title</div>
-            </div>
-            <div class="col-4">
-              Date
-            </div>
-          </div>
-
-          <div class="mailbox-item">
-            <div class="col-1">
-              <input type="checkbox">
-            </div>
-            <div class="col-5">
-              <div class="sender-name">Sender Name</div>
-              <div class="email-title">Email Title</div>
-            </div>
-            <div class="col-4">
-              Date
-            </div>
-          </div>
-          <div class="mailbox-item">
-            <div class="col-1">
-              <input type="checkbox">
-            </div>
-            <div class="col-5">
-              <div class="sender-name">Sender Name</div>
-              <div class="email-title">Email Title</div>
-            </div>
-            <div class="col-4">
-              Date
-            </div>
-          </div>
-          <div class="mailbox-item">
-            <div class="col-1">
-              <input type="checkbox">
-            </div>
-            <div class="col-5">
-              <div class="sender-name">Sender Name</div>
-              <div class="email-title">Email Title</div>
-            </div>
-            <div class="col-4">
-              Date
-            </div>
-          </div>
-          <div class="mailbox-item">
-            <div class="col-1">
-              <input type="checkbox">
-            </div>
-            <div class="col-5">
-              <div class="sender-name">Sender Name</div>
-              <div class="email-title">Email Title</div>
-            </div>
-            <div class="col-4">
-              Date
-            </div>
-          </div>
-          <div class="mailbox-item">
-            <div class="col-1">
-              <input type="checkbox">
-            </div>
-            <div class="col-5">
-              <div class="sender-name">Sender Name</div>
-              <div class="email-title">Email Title</div>
-            </div>
-            <div class="col-4">
-              Date
-            </div>
-          </div>
+ <!--- Column 3 email form ---->
+      <div class="col-sm-5">
+        <div class="card">
+          <div class="card-header highlight">
+            Meeting Request
+            <div class="float-right">
+              <span class="font-weight-bold">From:</span> John Doe &lt;john@example.com&gt;<br>
+              <span class="font-weight-bold">To:</span> Jane Doe &lt;jane@example.com&gt;<br>
+              <span class="font-weight-bold">
+         Date:</span> May 13, 2023 9:30 AM
         </div>
       </div>
 
-
-         <!---email form ---->
-      <div class="col-md-4">
-        <div class="mail-compose">
-          <div class="form-group">
-            <label for="to">To:</label>
-            <input type="text" class="form-control" id="to" placeholder="Enter recipient">
-          </div>
-          <div class="form-group">
-            <label for="from">From:</label>
-            <input type="text" class="form-control" id="from" placeholder="Enter sender">
-          </div>
-          <textarea rows="10" placeholder="Compose your reply..."></textarea>
-          <div class="flexbox">
-            <button class="btn btn-primary">Reply</button>
-            <button class="btn btn-primary">Send</button>
-          </div>
-        </div>
+      <div class="card-body">
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut odio ipsum. Donec interdum turpis non felis porttitor ullamcorper. Integer id velit a libero consectetur tristique in sit amet ex. Sed eu nulla sit amet orci laoreet feugiat. Praesent auctor enim libero, quis rhoncus nisl suscipit vitae. Fusce eget magna vitae massa eleifend tincidunt a id sapien. Sed vel ligula risus. Donec elementum nibh vel neque bibendum tincidunt. Proin at volutpat ante, quis vestibulum est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam dapibus est eget tortor venenatis, quis posuere turpis bibendum. Duis nec sem et lacus laoreet varius. Curabitur gravida tristique arcu, nec pulvinar velit auctor eget.</p>
+      </div>
+      <div class="email-attachments">
+        <h5>Attachments:</h5>
+        <ul>
+          <li><a href="#">attachment1.pdf</a></li>
+          <li><a href="#">attachment2.jpg</a></li>
+        </ul>
+      </div>
+      <!-- Reply Modal button -->
+      <div class="card-footer">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Reply</button>
       </div>
     </div>
   </div>
+</div>
+</div>
+        
+     <!---Reply Modal---->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Recipient:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send message</button>
+        <button type="button" class="btn btn-success">Save</button>
+      </div>
+      </div>
+    </div>
+  </div>
+</div> 
+       
+   <!---Bootstrap Modal js-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+
+  const exampleModal = document.getElementById('exampleModal');
+  exampleModal.addEventListener('show.bs.modal', event => {
+    // Button that triggered the modal
+    const button = event.relatedTarget;
+    // Extract info from data-mdb-* attributes
+    const recipient = button.getAttribute('data-mdb-whatever');
+
+    // Update the modal's content.
+    const modalTitle = exampleModal.querySelector('.modal-title');
+    const modalBodyInput = exampleModal.querySelector('.modal-body input');
+
+    modalTitle.textContent = `New message to ${recipient}`;
+    modalBodyInput.value = recipient;
+  });
+
+  // Add event listener to the "Save" button
+  document.getElementById('save-button').addEventListener('click', function() {
+    // Perform your desired action here
+    console.log('Save button clicked!');
+    // You can add your logic to save the data or perform any other task
+  });
+</script>
 </body>
+
 </html>
-
-
-
-
-   

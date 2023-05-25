@@ -6,14 +6,14 @@ background-image: radial-gradient(#477af0 0.5px, #f9f9fc 0.5px);
 background-size: 10px 10px;
 }
 
-
 .btn-primary {
     background-color: #006d77;
     border-color: #006d77;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
-  
-  
+  .hamburger-icon{
+    padding: 15px;
+  }
   /* Customize the off-canvas sidebar */
   .offcanvas {
     background-color:#006d77;
@@ -47,39 +47,6 @@ background-size: 10px 10px;
     color: white;
   }
 
-
-  .container {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .search-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: left;
-    margin-bottom: 20px;
-    
-  }
-  
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.4);
-  }
-  
-  .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888888;
-    width: 80%;
-  }
   
   .close {
     color: #aaa;
@@ -96,8 +63,6 @@ background-size: 10px 10px;
   }
 
 
-
-
   .btn-outline-success {
     background-color: #9fa3a3;
     border-color: #f7f9f9;
@@ -108,6 +73,12 @@ background-size: 10px 10px;
     border-color: #eff2f2;
    
   }
+
+  @media (max-width: 576px) {
+    .form-control::placeholder {
+      font-size: 10px;
+    }
+  }
   
   .pagination .page-link {
     color: rgb(241, 90, 9); /* Change the color to your desired value */
@@ -115,103 +86,40 @@ background-size: 10px 10px;
 
   .pagination {
     margin-bottom: 40px; /* Add margin to the bottom of the page navigation */
+    position:center;
   }
-  .inbox-container {
-    display: flex;
-    flex-direction: row;
+  .list-group-item.highlight {
+    background-color: #f6c196; /* Set your desired highlight color here */
+  }
+  .list-group-item:hover {
+    background-color: #f8934a; /* Set your desired hover color here */
+  }
+ 
+.card {
+  width: 100%;
+  max-width: unset;
+  }
+
+  .highlight {
+    background-color: #f6c196; /* Set your desired highlight color here */
+  }
+  
+
+  .modal-button-container { 
+    padding: 15px; /* Adjust the padding as needed */
+  }
+  .form-check {
+    padding: 15px;
 
   }
 
+  .list-group-item {
+    background-color: #f5f5f5; /* Change the background color */
+    border-color: #dddddd; /* Change the border color */
+  }
 
-
-  header {
-    text-align:center;
-    margin-bottom: 10%;
-    margin-top: 0;
-
-  }
-  
-  .mailbox {
-    background-color: #fff;
-    padding: 10px;
-    box-shadow:0 0 10px rgba(242, 133, 9, 0.2);
-   margin-left:100px;
-   margin-top:-30px;
-   
-   
-  }
-  
-  .mailbox-header,
-  .mailbox-item {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-gap: 10px;
-    align-items: center;
-    border-bottom: 1px solid #ee9761;
-    box-shadow: 0 0 10px rgba(242, 133, 9, 0.2);
-  }
-  
-  .mailbox-header .col-1,
-  .mailbox-item .col-1 {
-    text-align: center;
-  }
-  
-  .mailbox-header .col-5,
-  .mailbox-item .col-5 {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .mailbox-header .col-5 .sender-name,
-  .mailbox-item .col-5 .sender-name {
-    font-weight: bold;
-    color:#ee9761;
-  }
-  
-  .mailbox-header .col-5 .email-title,
-  .mailbox-item .col-5 .email-title {
-    color: #ee97615;
-  }
-  
-  .mailbox-header .col-4,
-  .mailbox-item .col-4 {
-    text-align: right;
-    color:#ee9761;
-  }
-  
-  .mail-compose {
-   
-    padding: 0px;
-    margin-top: 0px;
-    color:#ec7d28;
-    
-  }
-  
-  .mail-compose textarea {
-    width: 400px;
-    height: 400px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    resize: none;
-    margin-top: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .mail-compose .form-group {
-    margin-top: 10px;
-    width: 400px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    color:#ec7d28;
-  }
-  
-  .mail-compose .flexbox {
-    display: flex;
-    justify-content: flex-end;
-
-   
-  }
-  
-  .mail-compose .btn {
-    margin-left: 10px;
+  .list-group-item .form-check-input:checked + .form-check-label::before {
+    background-color: #e27d0a; /* Change the checkbox color when checked */
+    border-color: #f58905; /* Change the checkbox border color when checked */
   }
   
