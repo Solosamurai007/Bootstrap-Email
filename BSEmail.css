@@ -1,6 +1,6 @@
 
 body {
-  background-color: #e5e5f7;
+background-color: #e5e5f7;
 opacity: 0.8;
 background-image: radial-gradient(#477af0 0.5px, #f9f9fc 0.5px);
 background-size: 10px 10px;
@@ -62,7 +62,6 @@ background-size: 10px 10px;
     cursor: pointer;
   }
 
-
   .btn-outline-success {
     background-color: #9fa3a3;
     border-color: #f7f9f9;
@@ -76,7 +75,7 @@ background-size: 10px 10px;
 
   @media (max-width: 576px) {
     .form-control::placeholder {
-      font-size: 10px;
+      font-size: 9px;
     }
   }
   
@@ -95,7 +94,7 @@ background-size: 10px 10px;
     background-color: #f8934a; /* Set your desired hover color here */
   }
  
-.card {
+  .card {
   width: 100%;
   max-width: unset;
   }
@@ -104,13 +103,11 @@ background-size: 10px 10px;
     background-color: #f6c196; /* Set your desired highlight color here */
   }
   
-
   .modal-button-container { 
     padding: 15px; /* Adjust the padding as needed */
   }
   .form-check {
     padding: 15px;
-
   }
 
   .list-group-item {

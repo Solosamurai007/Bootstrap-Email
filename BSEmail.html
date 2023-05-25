@@ -7,10 +7,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   <link href="BSEmail.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
 </head>
 <body>
-
  
   <!-----Hamburger icon------>
   
@@ -75,7 +73,7 @@
           </div>
           <div class="mb-3">
             <label for="message-text" class="col-form-label">Message:</label>
-            <textarea class="form-control" id="message-text"></textarea>
+            <textarea class="form-control" id="message-text" style="height: 200px;"></textarea>
           </div>
         </form>
       </div>
@@ -87,6 +85,7 @@
     </div>
   </div>
 </div>
+
    
  <!---- offcanvas Navbar ------> 
 
@@ -142,6 +141,7 @@
             <h7><strong>DotMail BOX</strong></h7> 
             <div class="alert alert-info alert-tablet" role="alert">
               <i class="bi bi-envelope-heart-fill fa-2x animated-icon"></i>
+           
             </div>
           </li>
           <li>
@@ -150,6 +150,7 @@
                 <path d="M4.968 9.75a.5.5 0 1 0-.866.5A4.498 4.498 0 0 0 8 12.5a4.5 4.5 0 0 0 3.898-2.25.5.5 0 1 0-.866-.5A3.498 3.498 0 0 1 8 11.5a3.498 3.498 0 0 1-3.032-1.75zM7 5.116V5a1 1 0 0 0-1-1H3.28a1 1 0 0 0-.97 1.243l.311 1.242A2 2 0 0 0 4.561 8H5a2 2 0 0 0 1.994-1.839A2.99 2.99 0 0 1 8 6c.393 0 .74.064 1.006.161A2 2 0 0 0 11 8h.438a2 2 0 0 0 1.94-1.515l.311-1.242A1 1 0 0 0 12.72 4H10a1 1 0 0 0-1 1v.116A4.22 4.22 0 0 0 8 5c-.35 0-.69.04-1 .116z"/>
                 <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-1 0A7 7 0 1 0 1 8a7 7 0 0 0 14 0z"/>
               </svg>
+             
             </div></li>
         </ul>
       </div>
@@ -297,23 +298,10 @@
                                   </div>
                                 </div>
                               </li>
-            
-            <li class="list-group-item">
-              <div class="d-flex align-items-center">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="email2">
-                  <label class="form-check-label" for="email2"></label>
-                </div>
-                <div class="ms-2">
-                  <span class="fw-bold">Sender Name</span> - Email Title
-                  <span class="text-muted"> - Date</span>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
+                           </ul>
+                          </div>
  <!-- Add more email list items here -->
- <!-- Repeat the code block below for each email item -->
+ 
 
  <!--- Column 3 email form ---->
       <div class="col-sm-5">
@@ -346,37 +334,8 @@
   </div>
 </div>
 </div>
-        
-     <!---Reply Modal---->
 
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="mb-3">
-            <label for="recipient-name" class="col-form-label">Recipient:</label>
-            <input type="text" class="form-control" id="recipient-name">
-          </div>
-          <div class="mb-3">
-            <label for="message-text" class="col-form-label">Message:</label>
-            <textarea class="form-control" id="message-text"></textarea>
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Send message</button>
-        <button type="button" class="btn btn-success">Save</button>
-      </div>
-      </div>
-    </div>
-  </div>
-</div> 
+
        
    <!---Bootstrap Modal js-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
@@ -404,5 +363,4 @@
   });
 </script>
 </body>
-
 </html>
